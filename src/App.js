@@ -13,9 +13,9 @@ class App extends Component {
     }
   };
   
-  addNewItem = (newItem) => {
+  addNewItem = (item) => {
     this.setState({
-      items:[...this.state.items,newItem]
+      items:[...this.state.items,item]
     })
   };
   
@@ -38,10 +38,20 @@ class App extends Component {
   };
 
   selectedItem = (item) => {
-    console.log(item)
     this.setState({
       selectedItem:item
     });
+  };
+
+  handleUpdate = (id,title,description) => {
+    let newArray = this.state.items.map((item) => {
+      if(item.id === id){
+        return ({...item,title:title,description:description});
+      }else{
+        return item
+      }
+    })
+    this.setState({items:newArray})
   };
 
 
@@ -59,7 +69,10 @@ class App extends Component {
               changeComplete={this.changeComplete}/>
           </div>
           <div className="col-12 col-md-6 col-lg-6">
-            <ItemDetail item = {this.state.selectedItem}/>
+            <ItemDetail 
+              item = {this.state.selectedItem}
+              handleUpdate={this.handleUpdate}
+            />
           </div>
         </div>
       </div>

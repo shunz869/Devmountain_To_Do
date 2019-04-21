@@ -13,7 +13,6 @@ export class AddItem extends Component {
     this.refs.title.value = null
   };
 
-
   render(){
     return(
       <form onSubmit={this.handleSubmit}>

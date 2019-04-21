@@ -5,15 +5,16 @@ export class ItemList extends Component {
   handleDelete = (item) => {
     let title = item.title
     this.props.deleteItem(title)
-  }
+  };
 
   handleSelect = (item) => {
     this.props.selectedItem(item)
-  }
+  };
+
   handleComplete = (item) => {
     let newComleted = item.title;
     this.props.changeComplete(newComleted)
-  }
+  };
   
   addClassname = (item) => {
     if(item.completed === true){
