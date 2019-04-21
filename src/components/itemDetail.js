@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const ItemDetail = (props) => {
-  if(!props.item){
+  if(props.item.title == null){
     return null;
   }
   return(

@@ -7,16 +7,36 @@ export class ItemList extends Component {
     this.props.deleteItem(title)
   }
 
+  handleSelect = (item) => {
+    this.props.selectedItem(item)
+  }
+  handleComplete = (item) => {
+    let newComleted = item.title;
+    this.props.changeComplete(newComleted)
+  }
+  
+  addClassname = (item) => {
+    if(item.completed === true){
+      return "btn btn-primary btn-sm"
+    }else {
+      return "btn btn-secondary btn-sm"
+    }
+  };
+
   renderItems = () => {
     return this.props.items.map(item => {
       return(
         <ul className="list-group" key = {item.id}>
-          <li className="list-group-item d-flex justify-content-between align-items-center">
-            {item.title}
+          <li 
+          className="list-group-item d-flex justify-content-between align-items-center" 
+          >
+            <span onClick={()=>{this.handleSelect(item)}}>{item.title}</span>
             <div className="btn-group">
               <button 
-              className={item.completed === "true"? "btn btn-primary btn-sm":"btn btn-secondary btn-sm"}
-              style={{marginRight:10}}>
+              className={this.addClassname(item)}
+              style={{marginRight:10}}
+              onClick = {() => {this.handleComplete(item)}} 
+              >
               Complete
               </button>
               <button className="btn btn-secondary btn-sm" onClick = {() => {this.handleDelete(item)}}>Delete</button>

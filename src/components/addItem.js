@@ -6,10 +6,11 @@ export class AddItem extends Component {
     e.preventDefault();
     let title = this.refs.title.value;
     if (!title.trim()) {
-      alert("Input can't be null")
+      alert("Please type in the title")
       return
     }
     this.props.addNewItem({title})
+    this.refs.title.value = null
   };
 
 
