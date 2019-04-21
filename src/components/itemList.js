@@ -35,6 +35,7 @@ export class ItemList extends Component {
               <button 
               className={this.addClassname(item)}
               style={{marginRight:10}}
+              disabled={item.completed}
               onClick = {() => {this.handleComplete(item)}} 
               >
               Complete
