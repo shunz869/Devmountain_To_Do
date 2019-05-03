@@ -25,6 +25,9 @@ export class ItemList extends Component {
   };
 
   renderItems = () => {
+    if (!this.props.items){
+      return <div>Loading</div>
+    }
     return this.props.items.map(item => {
       return(
         <ul className="list-group" key = {item.id}>

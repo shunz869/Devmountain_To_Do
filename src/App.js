@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { AddItem } from './components/addItem';
 import { ItemList } from './components/itemList';
 import { ItemDetail } from './components/itemDetail';
@@ -8,9 +9,17 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      items:this.props.items,
+      items:[],
       selectedItem:''
     }
+  };
+  componentDidMount(){
+    axios.get('https://practiceapi.devmountain.com/api/tasks')
+      .then(res => {
+        this.setState({
+          items:res.data
+        });
+      });
   };
   
   addNewItem = (item) => {

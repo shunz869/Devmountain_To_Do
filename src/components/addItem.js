@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from "uuid";
 
 export class AddItem extends Component {
   
@@ -9,7 +10,8 @@ export class AddItem extends Component {
       alert("Please type in the title")
       return
     }
-    this.props.addNewItem({title})
+    let id= uuid.v4();
+    this.props.addNewItem({id,title})
     this.refs.title.value = null
   };
 
