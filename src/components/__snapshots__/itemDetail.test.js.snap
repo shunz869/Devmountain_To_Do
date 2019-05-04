@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemDetail renders correctly 1`] = `
+<form
+  style={
+    Object {
+      "marginTop": 50,
+    }
+  }
+>
+  <div
+    className="form-group"
+  >
+    <label>
+      Task
+    </label>
+    <input
+      className="form-control"
+      placeholder="abc"
+      type="text"
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label>
+      Description
+    </label>
+    <input
+      className="form-control"
+      type="text"
+    />
+  </div>
+  <div
+    className="btn-group"
+  >
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      style={
+        Object {
+          "marginRight": 5,
+        }
+      }
+    >
+      Save
+    </button>
+    <button
+      className="btn btn-secondary"
+      onClick={[Function]}
+      style={
+        Object {
+          "marginRight": 5,
+        }
+      }
+    >
+      Cancel
+    </button>
+  </div>
+</form>
+`;

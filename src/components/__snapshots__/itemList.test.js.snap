@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemList renders correctly 1`] = `
+<div
+  className="row"
+  style={
+    Object {
+      "marginTop": 50,
+    }
+  }
+>
+  <div
+    className="col-12"
+  >
+    <ul
+      className="list-group"
+    >
+      <li
+        className="list-group-item d-flex justify-content-between align-items-center"
+      >
+        <span
+          onClick={[Function]}
+        >
+          abc
+        </span>
+        <div
+          className="btn-group"
+        >
+          <button
+            className="btn btn-secondary btn-sm"
+            onClick={[Function]}
+            style={
+              Object {
+                "marginRight": 10,
+              }
+            }
+          >
+            Complete
+          </button>
+          <button
+            className="btn btn-secondary btn-sm"
+            onClick={[Function]}
+          >
+            Delete
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
