@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { AddItem } from './components/addItem';
-import { ItemList } from './components/itemList';
-import { ItemDetail } from './components/itemDetail';
+import ItemList from './components/itemList';
+import ItemDetail  from './components/itemDetail';
+import AddItem from './components/addItem';
 
 
 class App extends Component {
