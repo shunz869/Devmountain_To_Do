@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 
-export class ItemDetail extends Component{
+ class ItemDetail extends Component{
   updateContext = (e) => {
     e.preventDefault(); 
     const id =this.props.item.id;
@@ -40,3 +40,4 @@ export class ItemDetail extends Component{
     );
   };
 };
+export default ItemDetail;

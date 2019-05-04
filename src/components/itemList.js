@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class ItemList extends Component {
+class ItemList extends Component {
 
   handleDelete = (item) => {
     let title = item.title
@@ -62,3 +62,4 @@ export class ItemList extends Component {
     );
   }
 };
+export default ItemList

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import uuid from "uuid";
 
-export class AddItem extends Component {
+class AddItem extends Component {
   
   handleSubmit = (e) => {
     e.preventDefault();
@@ -27,3 +27,5 @@ export class AddItem extends Component {
   };
 
 };
+
+export default AddItem
