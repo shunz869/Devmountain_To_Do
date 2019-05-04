@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/shunz869/Devmountain_To_Do/precache-manifest.4a488f7ccbdc495dd2cae8d779894b59.js"
+  "/Devmountain_To_Do/precache-manifest.b273c7b6a3c4ead173372ef831ab416a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/shunz869/Devmountain_To_Do/index.html", {
+workbox.routing.registerNavigationRoute("/Devmountain_To_Do/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
