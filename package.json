@@ -2,7 +2,7 @@
   "name": "devmountain",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/shunz869/Devmountain_To_Do",
+  "homepage": "https://shunz869.github.io/Devmountain_To_Do",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
