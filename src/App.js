@@ -14,7 +14,7 @@ class App extends Component {
     }
   };
   componentDidMount(){
-    axios.get('https://practiceapi.devmountain.com/api/tasks')
+    axios.get('https://5cd907320b0040001471fdec.mockapi.io/todos')
       .then(res => {
         this.setState({
           items:res.data
