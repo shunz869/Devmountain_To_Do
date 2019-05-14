@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Devmountain_To_Do/precache-manifest.b273c7b6a3c4ead173372ef831ab416a.js"
+  "/Devmountain_To_Do/precache-manifest.4ca5ba38ee83844e477754886f9f1e04.js"
 );
 
 workbox.clientsClaim();
